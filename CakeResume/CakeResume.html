@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CakeResume</title>
+    <link rel="icon" href="./素材檔案/fav-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .header{
+          width: 100%;
+          border: 1px solid rgba(205, 228, 141, 0.482);
+          position: fixed;
+          top: 0;
+      }
+      .main{
+          margin-top: 4.5rem;
+          position: relative;
+      }
+      .nav-li {
+        padding-top:20px ;
+        padding-left:10px ;
+        padding-right:10px ;
+        list-style: none;
+        font-size: 0.8rem;
+        
+      }
+      .nav-li>a{
+          text-decoration: none;
+          color: #333;
+      }
+      .nav-li>i{
+        cursor: pointer;
+      }
+      
+      .nr-1 {
+          
+          padding: 5px 5px ;
+          font-size: 0.8rem;
+      }
+      .nr-2 {
+          padding: 5px 5px ;
+          font-size: 0.8rem;
+          border-radius: 3px;
+          border: 1px solid #13ab67;
+      }
+      .nr-2:hover{
+          background-color:#4cf71975 ;
+          
+      } 
+      .nav-right a{
+          text-decoration: none;
+          color: #13ab67;
+      }
+      .main-text{
+          width: 100%;
+          color: #333;
+          background-color: rgba(221, 238, 228, 0.233);
+      }
+      .main-text2{
+          width: 100%;
+          color: #333;
+          background-color: rgba(221, 238, 228, 0.233);
+      }
+      .btn-g{
+          width: 15%;
+          background-color: #13ab67;
+          border-radius: 5px;
+      }
+      .button2{
+          width: 12%;
+          background-color: #E8E8E8;
+          margin-left: 1rem;
+          border-radius: 5px;
+      }
+      .button1 a{
+          display: inline-block;
+          color:#fff ;
+          text-decoration: none;
+      }
+      .button2 a {
+          display: inline-block;
+          color: #333;
+          text-decoration: none;
+      }
+      .button3 {
+          width: 10%;
+          background-color: #13ab67;
+          border-radius: 5px;
+      }
+      .button3 a{
+          display: inline-block;
+          color:#fff ;
+          text-decoration: none;
+      }
+      .button1:hover {
+        background-color:#13ab67d9
+      }
+      .button2:hover {
+        background-color:#e8e8e8af
+      }
+      .center-pict img {
+        width: 90%;
+          overflow: hidden;
+      }
+      .pd-40{
+          padding: 0 40px;
+      }
+      .center-pict-sm img {
+          width: 75%;
+      }
+      .t1-h6 {
+          font-size: 0.5rem;
+          font-weight: 300;
+      }
+      .btn{
+          background-color: #13ab67;
+          border-radius: 5px;
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+      .t1-left img{
+          width: 100%;
+      }
+      #t1-right {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          text-align: left;
+          letter-spacing: 0.3rem;
+      }
+      #t1-right img{
+          width: 10%;
+      }
+      .t2 {
+          order: 1;
+      }
+      .t2 img {
+          width: 10%;
+      }
+      #vedio{
+          width: 70%;
+      }
+      .t3 {
+          order: 1;
+      }
+      .t3 img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container-fluid pd-40">
+        <div class="row d-flex justify-content-between m-2
+        align-items-center">
+          <div class="nav-left d-flex align-items-center ">
+            <div class="logo">
+              <img src="./素材檔案/logo.png" alt="" />
+            </div>
+            <div class="nav-list d-flex">
+              <ul class="nav-ul d-flex ">
+                <li class="nav-li"><a href="">找工作</a>
+                    <i class="fas fa-chevron-down"></i></li>
+                <li class="nav-li"><a href="">履歷</a>
+                    <i class="fas fa-chevron-down"></i></li>
+                <li class="nav-li"><a href="">作品集</a>
+                    <i class="fas fa-chevron-down"></i></li>
+                <li class="nav-li"><a href="">文章</a>
+                    <i class="fas fa-chevron-down"></i></li>
+                <li class="nav-li"><a href="">徵才</a>
+                    <i class="fas fa-chevron-down"></i></li>
+                <li class="nav-li"><a href="">更多</a>
+                    <i class="fas fa-chevron-down"></i></li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-right d-flex">
+            <div class="nr-1">
+              <a href="">登入</a>
+            </div>
+            <div class="nr-2">
+              <a href="" id="nra">註冊</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+        <div class="container ">
+            <div class="row">
+                <div class="main-text text-center w-100">
+                    <h2>找工作，從製作專業履歷開始</h2><br>
+                    <h6>免費製作履歷，快速找到理想工作</h6>
+                    <div class="button d-flex align-items-center justify-content-center">
+                        <div class="button1  btn-g p-2">
+                            <a href="">免費製作履歷</a>
+                        </div>
+                        <div class="button2 p-2">
+                            <a href="" >搜尋職缺</a>
+                        </div>
+                    </div>
+                    <div class="center-pict ">
+                        <img src="./素材檔案/mid-pict.png" alt="">
+                    </div>
+                    <div class="center-pict-sm ">
+                        <img src="./素材檔案/center-sm.png" alt="">
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>輕鬆製作履歷</h2><br>
+                    <h6>CakeResume 提供多種風格與排版的履歷模板，讓您快速完成專業精美的履歷。</h6>
+                    <br>
+                    <br>
+                    <div class="button d-flex align-items-center justify-content-center">
+                        <div class="button1  btn-g p-2">
+                            <a href="">開始製作</a>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active ">
+                              <div class="cp1 d-flex align-items-center justify-content-center">
+                                <img src="./素材檔案/c1-1.png" class="d-block w-33" alt="...">
+                                <img src="./素材檔案/c1-2.png" class="d-block w-33" alt="...">
+                                <img src="./素材檔案/c1-3.png" class="d-block w-33" alt="...">
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="cp2 d-flex align-items-center justify-content-center">
+                                <img src="./素材檔案/c2-1.png" class="d-block w-33" alt="...">
+                                <img src="./素材檔案/c2-2.png" class="d-block w-33" alt="...">
+                                <img src="./素材檔案/c2-3.png" class="d-block w-33" alt="...">
+                              </div>
+                          </div>
+                          <div class="carousel-item ">
+                              <div class="cp3 d-flex align-items-center justify-content-center">
+                                <img src="./素材檔案/c3-1.png" class="d-block w-33" alt="...">
+                                <img src="./素材檔案/c3-2.png" class="d-block w-33" alt="...">
+                                <img src="./素材檔案/c3-3.png" class="d-block w-33" alt="...">
+                              </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+                <div class="mid-text text-center w-100 p-5" style="background-color:#a1dcc45b ;">
+                    <div class="t1 d-flex justify-content-between">
+                        <div class="t1-left">
+                            <img src="./素材檔案/t1-left.png" alt="">
+                        </div>
+                        <div class="t1-right" id="t1-right">
+                            <img src="./素材檔案/icon-search.svg" alt="">
+                            <h4>輕鬆找工作</h4>
+                            <h6 class="t1-h6">即時提供數萬筆知名新創、大公司職缺，薪資公開透明，<br>讓您透過篩選薪資、地點找工作</h6>
+                            <div class="button ">
+                                <div class=" button1 btn  " >
+                                    <a href="">搜尋職缺</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="t1 d-flex ">
+                        <div class="t1-left t2" >
+                            <video src="https://assets.cakeresume.com/assets/cakeresume_editor_demo-513b4d403199418c32b1cffcbffa0cf141c6838c54fc92f7f5c0b1eaafb6e2ab.mp4" alt="" id="vedio" autoplay="autoplay" loop="loop" muted="muted">
+                        </div>
+                        <div id="t1-right">
+                            <img src="./素材檔案/icon_drag.svg" alt="">
+                            <h4 >輕鬆找工作</h4>
+                            <h6 class="t1-h6">CakeResume 讓您高度客製化您的履歷排版，<br>用獨一無二的方式介紹自己</h6>
+                            <div class="button ">
+                                <div class=" button1 btn  " >
+                                    <a href="">搜尋職缺</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="mid-text2 mid-text text-center w-100 p-5" style="background-color:rgba(221, 238, 228, 0.233) ">
+                    <div class="t1 d-flex justify-content-between ">
+                        <div class="t1-left">
+                            <img src="./素材檔案/print.png" alt="">
+                        </div>
+                        <div class="t1-right" id="t1-right">
+                            <img src="./素材檔案/icon-pdf.svg" alt="">
+                            <h4>免費下載</h4>
+                            <h6 class="t1-h6">您可以隨時下載您的履歷，也可以即時線上轉發</h6>
+                            <div class="button ">
+                                <div class=" button1 btn " >
+                                    <a href="">開始製作</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="t1 d-flex ">
+                        <div class="t1-left t3" >
+                            <img src="./素材檔案/t2-right.png" alt="" >
+                        </div>
+                        <div id="t1-right">
+                            <img src="./素材檔案/icon-statistics.svg" alt="">
+                            <h4>與眾不同</h4>
+                            <h6 class="t1-h6">專業精美的設計讓您從其他求職者中脫穎而出</h6>
+                            <div class="button ">
+                                <div class=" button1 btn  " >
+                                    <a href="">開始製作</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mid-text3 d-flex">
+                    <h2>知名企業和新創都青睞的履歷</h２>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
