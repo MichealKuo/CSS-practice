@@ -25,12 +25,15 @@
       }
       .header{
           width: 100%;
-          border: 1px solid rgba(205, 228, 141, 0.482);
-          position: fixed;
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.13);
+          position: sticky;
           top: 0;
+          background-color: #fff;
+          z-index: 1;
+          padding-top:5px ;
+          padding-bottom:5px ;
       }
       .main{
-          margin-top: 4.5rem;
           position: relative;
       }
       .nav-li {
@@ -139,7 +142,7 @@
           width: 100%;
       }
       #t1-right {
-          width: 40%;
+          width: 50%;
           display: flex;
           flex-direction: column;
           align-content: center;
@@ -151,7 +154,7 @@
           width: 10%;
       }
       .t2 {
-          order: 1;
+          order: 2;
       }
       .t2 img {
           width: 10%;
@@ -208,6 +211,10 @@
         <div class="container ">
             <div class="row">
                 <div class="main-text text-center w-100">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                     <h2>找工作，從製作專業履歷開始</h2><br>
                     <h6>免費製作履歷，快速找到理想工作</h6>
                     <div class="button d-flex align-items-center justify-content-center">
@@ -281,13 +288,13 @@
                 </div>
                 <div class="mid-text text-center w-100 p-5" style="background-color:#a1dcc45b ;">
                     <div class="t1 d-flex justify-content-between">
-                        <div class="t1-left">
+                        <div class="t1-left p-5">
                             <img src="./素材檔案/t1-left.png" alt="">
                         </div>
-                        <div class="t1-right" id="t1-right">
+                        <div class="t1-right p-5" id="t1-right">
                             <img src="./素材檔案/icon-search.svg" alt="">
                             <h4>輕鬆找工作</h4>
-                            <h6 class="t1-h6">即時提供數萬筆知名新創、大公司職缺，薪資公開透明，<br>讓您透過篩選薪資、地點找工作</h6>
+                            <h6 class="t1-h6">即時提供數萬筆知名新創、大公司職缺，<br>薪資公開透明，讓您透過篩選薪資、地點找工作</h6>
                             <div class="button ">
                                 <div class=" button1 btn  " >
                                     <a href="">搜尋職缺</a>
@@ -309,11 +316,12 @@
                         </div>
                         <div id="t1-right">
                             <img src="./素材檔案/icon_drag.svg" alt="">
-                            <h4 >輕鬆找工作</h4>
+                            <h4 >拖拉履歷模板
+                            </h4>
                             <h6 class="t1-h6">CakeResume 讓您高度客製化您的履歷排版，<br>用獨一無二的方式介紹自己</h6>
-                            <div class="button ">
-                                <div class=" button1 btn  " >
-                                    <a href="">搜尋職缺</a>
+                            <div class="button">
+                                <div class="button1 btn" >
+                                    <a href="">開始製作</a>
                                 </div>
                             </div>
                         </div>
@@ -330,7 +338,7 @@
                         <div class="t1-left">
                             <img src="./素材檔案/print.png" alt="">
                         </div>
-                        <div class="t1-right" id="t1-right">
+                        <div class="t1-right pl-5" id="t1-right">
                             <img src="./素材檔案/icon-pdf.svg" alt="">
                             <h4>免費下載</h4>
                             <h6 class="t1-h6">您可以隨時下載您的履歷，也可以即時線上轉發</h6>
@@ -363,7 +371,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mid-text3 d-flex">
+                <div class="mid-text3">
                     <h2>知名企業和新創都青睞的履歷</h２>
                     
                 </div>
