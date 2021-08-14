@@ -208,7 +208,61 @@
           font-weight: 0.1rem;
           color: rgba(51, 51, 51, 0.434);
       }
-      
+
+      .QA-bar {
+          background-color: rgba(48, 44, 44, 0.05);
+          text-align: center;
+
+      }
+      .qa {
+          display: flex;
+          justify-content: space-between;
+          cursor: pointer;
+          text-size-adjust: 100%;
+          margin-right:30px ;
+          padding:5px 15px;
+          color: rgb(99, 99, 102);
+          border-bottom: 1px solid rgba(172, 166, 166, 0.077)80% ;
+          align-items: center;
+          background-color: #fff;
+          border-radius: 0.3rem;
+      }
+      .qa>h3{
+          font-size: 1.3rem;
+          line-height: 3rem;
+      }
+      .qa:hover{
+          color: #13ab67;
+      }
+      .footer{
+          background-color: #6a6a6a;
+      }
+      .ft{
+          list-style: none;
+          font-size: 0.8rem;
+          color: #c2bfbf;
+          cursor: pointer;
+          line-height: 1.8rem;
+      }
+     
+      #ft-pic1 {
+          width: 50%;
+      }
+      #ft-pic2 {
+          width: 30%;
+      }
+      #ft-title {
+        color: #9f9a9a;
+        letter-spacing: 0.3rem;
+      }
+      /* RWD */
+      .mobile-menu-btn{
+          color: #000;
+      }
+      .mobile-menu  {
+          display: flex;
+        justify-content: space-around;
+      }
     </style>
   </head>
   <body>
@@ -217,10 +271,30 @@
         <div class="row d-flex justify-content-between m-2
         align-items-center">
           <div class="nav-left d-flex align-items-center ">
-            <div class="logo">
+              <!-- mobile -->
+              <div class="mobile-menu  d-flex d-sm-block  d-md-none d-xl-none">
+                <div class="mb-btn">
+                    <a href="#" class="mobile-menu-btn">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>  
+                <div class="mobile-logo">
+                    <img src="./素材檔案/logo.png" alt="" />
+                    <ul class="mobile-ul d-flex p-2">
+                        <li>履歷範本</li>
+                        <li>職缺</li>
+                        <li>招募</li>
+                    </ul>
+                </div>
+                <div class="2">
+                    <a href="">註冊</a>
+                </div>
+              </div>
+            
+            <div class="logo d-none d-xl-block">
               <img src="./素材檔案/logo.png" alt="" />
             </div>
-            <div class="nav-list d-flex">
+            <div class="nav-list d-none d-xl-block ">
               <ul class="nav-ul d-flex ">
                 <li class="nav-li"><a href="">找工作</a>
                     <i class="fas fa-chevron-down"></i></li>
@@ -238,10 +312,10 @@
             </div>
           </div>
           <div class="nav-right d-flex">
-            <div class="nr-1">
+            <div class="nr-1 d-none d-xl-block">
               <a href="">登入</a>
             </div>
-            <div class="nr-2">
+            <div class="nr-2 d-none d-xl-block">
               <a href="" id="nra">註冊</a>
             </div>
           </div>
@@ -515,20 +589,130 @@
                         <video src="https://assets.cakeresume.com/assets/v4/talent_search-ec9eb200b4d57eddf2dd5e296c4bdc0a0b13d70737a51327afbaffe7e6ce8397.mp4" alt="" id="vedio" autoplay="autoplay" loop="loop" muted="muted">
                     </div>
                     </div>
+                    <br>
+                    <br>
+                    <br>
                 </div>
-                <div class="QA-bar w-100">
+                <div class="QA-bar w-100 align-content-center">
                     <br>
                     <br>
                     <br>
-                    <h2 class="qa-h2 text-center">常見問題</h2>
-                    <div class="QA-drop ">
+                    <h2 class="qa-h2">常見問題</h2>
+                    <div class="QA-drop">
                         <ul>
-                            <li class="qa d-flex justify-content-between">
-                                <h5>為何我該選擇 CakeResume？</h5>
+                            <li class="qa">
+                                <h3>為何我該選擇 CakeResume？</h3>
+                                <span></span>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+                            <li class="qa">
+                                <h3>CakeResume 是免費的嗎？</h3>
+                                <span></span>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+                            <li class="qa">
+                                <h3>可以免費下載履歷 PDF 嗎？</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+                            <li class="qa">
+                                <h3>CakeResume 提供哪些履歷隱私設定？</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </li>
+                            <li class="qa">
+                                <h3>CakeResume 提供多少履歷模板？</h3>
                                 <i class="fas fa-chevron-down"></i>
                             </li>
                         </ul>
+                        <br>
+                    
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer w-100">
+        <div class="container">
+            <div class="row d-flex justify-content-between pt-5">
+                <div class="f1 mr-5 ml-5">
+                    <ul class="ft">
+                        <li id="ft-title">找工作</li>
+                        <li>職缺分類<i class="fas fa-chevron-down"></i></li>
+                        <li></li>
+                        <li>遠端工作</li>
+                        <li>實習機會</li>
+                        <li>兼職工作</li>
+                    </ul>
+                </div>
+                <div class="f1">
+                    <ul class="ft">
+                        <li id="ft-title">公司</li>
+                        <li>關於</li>
+                        <li>履歷製作價格方案</li>
+                        <li>新聞資料袋</li>
+                        <li>人才搜尋引擎價格方案</li>
+                        <li>新聞資料袋</li>
+                        <li>加入我們</li>
+                        <li>聯繫我們</li>
+                        <li>服務條款</li>
+                        <li>隱私政策</li>
+                        <li>就業安全<i class="fas fa-chevron-down"></i></li>
+                        <li>© 2020 CakeResume</li>
+                    </ul>
+                </div>
+                <div class="f1">
+                    <ul class="ft">
+                        <li id="ft-title">解決方案</li>
+                        <li>履歷製作</li>
+                        <li>線上作品集</li>
+                        <li>找工作</li>
+                        <li>刊登職缺－免費開始</li>
+                        <li>人才搜尋引擎</li>
+                        <li>人才搜尋引擎獵才方案</li>
+                        <li></li>
+                        <li></li>
+                        <li>資源</li>
+                        <li>文章</li>
+                        <li>免費電子書</li>
+                        <li>履歷範本</li>
+                        <li>履歷模板</li>
+                        <li>FAQs</li>
+                    </ul>
+                </div>
+                <div class="f1">
+                    <ul class="ft">
+                        <li id="ft-title">語言</li>
+                        <li>English</li>
+                        <li>中文（繁體）</li>
+                        <li>中文（简体）</li>
+                        <li>한국어</li>
+                        <li>日本語</li>
+                        <li>Français</li>
+                        <li>Quần Đảo Vơ-chin Mỹ</li>
+                        <li>Bahasa Indonesia</li>
+                        <li>Español</li>
+                    </ul>
+                </div>
+                <div class="f1 w-25">
+                    <ul class="ft">
+                        <li id="ft-title">追蹤我們</li>
+                        <li>在社群媒體上追蹤我們，以獲得最新履歷、<br>求職、和招募資訊！</li>
+                        <div class="icon">
+                            <i class="fab fa-medium"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter-square"></i>
+                        </div>
+                        <li>
+                            <img src="./素材檔案/f-pic1.png" alt="" id="ft-pic1">
+                        </li>
+                        <li></li>
+                        <li>CakeResume 找工作</li>
+                        <li></li>
+                        <li>
+                            <img src="./素材檔案/f-pic2.png" alt="" id="ft-pic2">
+                            <img src="./素材檔案/f-pic3.png" alt=""id="ft-pic2">
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
