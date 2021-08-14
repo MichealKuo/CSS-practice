@@ -260,36 +260,54 @@
           color: #000;
       }
       .mobile-menu  {
-          display: flex;
-        justify-content: space-around;
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+        
+      }
+      #m-log{
+          color: #13ab67;
+          font-size: 00.8rem;
+      }
+      .mobile-ul{
+          display: block;
+          justify-content: space-between;
+      }
+      .btn-sz{
+          width: 120px;
+      }
+      @media screen {
+          
       }
     </style>
   </head>
   <body>
-    <div class="header">
+    <div class="header ">
       <div class="container pd-40">
         <div class="row d-flex justify-content-between m-2
         align-items-center">
-          <div class="nav-left d-flex align-items-center ">
-              <!-- mobile -->
-              <div class="mobile-menu  d-flex d-sm-block  d-md-none d-xl-none">
-                <div class="mb-btn">
-                    <a href="#" class="mobile-menu-btn">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </div>  
-                <div class="mobile-logo">
-                    <img src="./素材檔案/logo.png" alt="" />
-                    <ul class="mobile-ul d-flex p-2">
-                        <li>履歷範本</li>
-                        <li>職缺</li>
-                        <li>招募</li>
-                    </ul>
-                </div>
-                <div class="2">
-                    <a href="">註冊</a>
-                </div>
-              </div>
+        <!-- mobile -->
+        <div class="mobile-menu d-sm-block  d-md-none d-xl-none ">
+            <div class="mb-btn">
+                <a href="#" class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>  
+            <div class="mobile-logo justify-content-center align-content-center">
+                <img src="./素材檔案/logo.png" alt="" />
+                <ul class="mobile-ul d-flex pt-2" style="list-style: none; font-size: 00.3rem;color: #6a6a6a;">
+                    <li class="mb-li">履歷範本</li>
+                    
+                    <li class="mb-li">職缺</li>
+                    
+                    <li class="mb-li">招募</li>
+                </ul>
+            </div>
+            <div class="2">
+                <a href="" id="m-log">註冊</a>
+            </div>
+          </div> 
+          <div class="nav-left d-flex align-items-center"> 
             <div class="logo d-none d-xl-block">
               <img src="./素材檔案/logo.png" alt="" />
             </div>
@@ -332,10 +350,10 @@
                     <h2>找工作，從製作專業履歷開始</h2><br>
                     <h6 class="sw">免費製作履歷，快速找到理想工作</h6>
                     <div class="button d-flex align-items-center justify-content-center">
-                        <div class="button1  btn-g p-2">
+                        <div class="button1  btn-g p-2 btn-sz ">
                             <a href="">免費製作履歷</a>
                         </div>
-                        <div class="button2 p-2">
+                        <div class="button2 p-2 btn-sz">
                             <a href="" >搜尋職缺</a>
                         </div>
                     </div>
@@ -349,11 +367,11 @@
                     <br>
                     <br>
                     <h2>輕鬆製作履歷</h2><br>
-                    <h6 class="sw">CakeResume 提供多種風格與排版的履歷模板，讓您快速完成專業精美的履歷。</h6>
+                    <h6 class="sw p-3">CakeResume 提供多種風格與排版的履歷模板，讓您快速完成專業精美的履歷。</h6>
                     <br>
                     <br>
                     <div class="button d-flex align-items-center justify-content-center">
-                        <div class="button1  btn-g p-2">
+                        <div class="button1  btn-g p-2 btn-sz">
                             <a href="">開始製作</a>
                         </div>
                     </div>
@@ -485,14 +503,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="mid-text3  p-5">
+                <div class="mid-text3 p-4 ">
                     <h3>知名企業和新創都青睞的履歷</h２>
                 </div>
-                <div class="mid-text4  w-75 mb-5">
-                    <div class="text-top">
-                        <ul class="u-text d-flex list-unstyled ">
+                <div class="mid-text4  w-100 mb-5">
+                    <div class="text-t col-12">
+                        <ul class="u-text d-flex list-unstyled col,">
                             <li>
-                                <h6 class="txt-h ">客製化履歷和更直覺的閱讀介面，讓 CakeResume 受到用人主管的青睞；藉由比傳統人力銀行更具主動性的操作方式，能精準且有效率地找到適合的人才，同時也能接觸到跨國性人才，增加招募的可能性。      
+                                <h6 class="txt-h">客製化履歷和更直覺的閱讀介面，讓 CakeResume 受到用人主管的青睞；藉由比傳統人力銀行更具主動性的操作方式，能精準且有效率地找到適合的人才，同時也能接觸到跨國性人才，增加招募的可能性。      
                                 </h6>
                                 <div class="sm-text d-flex justify-content-start align-items-center pl-3">
                                     <img src="./素材檔案/p1.png" alt="">
@@ -543,7 +561,6 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="text-down"></div>
                 </div>
                 <div class="mid-text5 w-100" style="background-color:#a1dcc45b ;">
                     <div class="text text-center">
@@ -556,7 +573,7 @@
                     <br>
                     <br>
                     <div class="button d-flex align-items-center justify-content-center">
-                        <div class="button1  btn-g p-2">
+                        <div class="button1  btn-g p-2 btn-sz">
                             <a href="">立即加入</a>
                         </div>
                     </div>
@@ -578,7 +595,7 @@
                     <br>
                     <br>
                     <div class="button d-flex align-items-center justify-content-center">
-                        <div class="button1  btn-g p-2">
+                        <div class="button1  btn-g p-2 btn-sz">
                             <a href="">搜尋履歷</a>
                         </div>
                     </div>
