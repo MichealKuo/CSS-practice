@@ -146,7 +146,7 @@
       .t1-left img{
           width: 100%;
       }
-      #t1-right {
+      .t1-right {
           width: 50%;
           display: flex;
           flex-direction: column;
@@ -155,7 +155,7 @@
           text-align: left;
           letter-spacing: 0.3rem;
       }
-      #t1-right img{
+      .t1-right img{
           width: 10%;
       }
       .t2 {
@@ -276,9 +276,47 @@
       .btn-sz{
           width: 120px;
       }
-      @media screen {
-          
+      #foot-icon {
+          width: 25%;
       }
+      @media screen and ( max-width: 576px){ 
+          #t1-576-r {
+              order: 2;
+              width: 350px;
+              object-fit: contain;
+             
+              
+          } #t1-576-l{
+              order: 1;
+              width: 350px;
+              align-items: center;
+              
+          } #t1 {
+              display: wrap;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+          }.mid-text3 >h3 {
+             font-size: 1.5em;
+          }.qa>h3 {
+              font-size: 1.0rem;
+          }.u-text {
+              display: flex;
+              flex-wrap: wrap;
+          }.text>h2{    
+              font-size: 1.8rem;
+          } #ft-col{
+              display: flex;
+              flex-wrap: wrap;
+              text-align: center;
+          }.f1 {
+              width: 100%;
+              
+          }#foot-icon {
+              width: 100%;
+          }    
+      }
+
     </style>
   </head>
   <body>
@@ -341,7 +379,7 @@
     </div>
     <div class="main">
         <div class="container ">
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center ">
                 <div class="main-text text-center w-100">
                     <br>
                     <br>
@@ -418,17 +456,17 @@
                         </a>
                       </div>
                 </div>
-                <div class="mid-text text-center w-100 p-5" style="background-color:#a1dcc45b ;">
-                    <div class="t1 d-flex justify-content-between">
-                        <div class="t1-left p-5">
+                <div class="mid-text text-center w-100 p-5" id="mid-text" style="background-color:#a1dcc45b ;">
+                    <div class="t1 d-flex justify-content-between col-12 " id="t1">
+                        <div class="t1-left p-3" id="t1-576-r">
                             <img src="./素材檔案/t1-left.png" alt="">
                         </div>
-                        <div class="t1-right p-5" id="t1-right">
+                        <div class="t1-right p-3" id="t1-576-l">
                             <img src="./素材檔案/icon-search.svg" alt="">
                             <h4>輕鬆找工作</h4>
                             <h6 class="t1-h6">即時提供數萬筆知名新創、大公司職缺，<br>薪資公開透明，讓您透過篩選薪資、地點找工作</h6>
                             <div class="button ">
-                                <div class=" button1 btn  " >
+                                <div class=" button1 btn  btn-sz" >
                                     <a href="">搜尋職缺</a>
                                 </div>
                             </div>
@@ -436,46 +474,38 @@
                     </div>
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="t1 d-flex ">
-                        <div class="t1-left t2" >
-                            <video src="https://assets.cakeresume.com/assets/cakeresume_editor_demo-513b4d403199418c32b1cffcbffa0cf141c6838c54fc92f7f5c0b1eaafb6e2ab.mp4" alt="" id="vedio" autoplay="autoplay" loop="loop" muted="muted">
+                    <div class="t1 d-flex justify-content-center align-content-center w-100" id="t1" >
+                        <div class="t1-left t2 justify-content-between" id="t1-576-r">
+                            <video src="https://assets.cakeresume.com/assets/cakeresume_editor_demo-513b4d403199418c32b1cffcbffa0cf141c6838c54fc92f7f5c0b1eaafb6e2ab.mp4" alt="" id="vedio" autoplay="autoplay" loop="loop" muted="muted" style="width: 90%;">
                         </div>
-                        <div id="t1-right">
+                        <div class="t1-right p-3" id="t1-576-l" >
                             <img src="./素材檔案/icon_drag.svg" alt="">
                             <h4 >拖拉履歷模板
                             </h4>
-                            <h6 class="t1-h6">CakeResume 讓您高度客製化您的履歷排版，<br>用獨一無二的方式介紹自己</h6>
+                            <h6 class="t1-h6">CakeResume 讓您高度客製化您的履歷排版，用獨一無二的方式介紹自己</h6>
                             <div class="button">
-                                <div class="button1 btn" >
+                                <div class="button1 btn mb-5" >
                                     <a href="">開始製作</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <br>
-                    <br>
-                    <br>
-                    <br>
+                
                     <br>
                     <br>
                 </div>
-                <div class="mid-text2 mid-text text-center w-100 p-5" style="background-color:rgba(221, 238, 228, 0.233) ">
-                    <div class="t1 d-flex justify-content-between ">
-                        <div class="t1-left">
+                <div class="mid-text2 mid-text text-center w-100 p-5 " style="background-color:rgba(221, 238, 228, 0.233) ">
+                    <div class="t1 d-flex justify-content-center align-content-center " id="t1">
+                        <div class="t1-left" id="t1-576-r">
                             <img src="./素材檔案/print.png" alt="">
                         </div>
-                        <div class="t1-right pl-5" id="t1-right">
+                        <div class="t1-right  t1-right" id="t1-576-l">
                             <img src="./素材檔案/icon-pdf.svg" alt="">
                             <h4>免費下載</h4>
                             <h6 class="t1-h6">您可以隨時下載您的履歷，也可以即時線上轉發</h6>
                             <div class="button ">
-                                <div class=" button1 btn " >
+                                <div class=" button1 btn btn-sz " >
                                     <a href="">開始製作</a>
                                 </div>
                             </div>
@@ -483,34 +513,32 @@
                     </div>
                     <br>
                     <br>
+                  
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div class="t1 d-flex ">
-                        <div class="t1-left t3" >
+                    <div class="t1 d-flex justify-content-center" id="t1">
+                        <div class="t1-left t3" id="t1-576-r" >
                             <img src="./素材檔案/t2-right.png" alt="" >
                         </div>
-                        <div id="t1-right">
+                        <div class="t1-right" id="t1-576-l">
                             <img src="./素材檔案/icon-statistics.svg" alt="">
                             <h4>與眾不同</h4>
                             <h6 class="t1-h6">專業精美的設計讓您從其他求職者中脫穎而出</h6>
                             <div class="button ">
-                                <div class=" button1 btn  " >
+                                <div class=" button1 btn mb-5 btn-sz " >
                                     <a href="">開始製作</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="mid-text3 p-4 ">
+                <div class="mid-text3 p-5 ">
                     <h3>知名企業和新創都青睞的履歷</h２>
                 </div>
                 <div class="mid-text4  w-100 mb-5">
-                    <div class="text-t col-12">
-                        <ul class="u-text d-flex list-unstyled col,">
+                    <div class="text">
+                        <ul class="u-text d-flex list-unstyled ">
                             <li>
-                                <h6 class="txt-h">客製化履歷和更直覺的閱讀介面，讓 CakeResume 受到用人主管的青睞；藉由比傳統人力銀行更具主動性的操作方式，能精準且有效率地找到適合的人才，同時也能接觸到跨國性人才，增加招募的可能性。      
+                                <h6 class="txt-h col-sm-12">客製化履歷和更直覺的閱讀介面，讓 CakeResume 受到用人主管的青睞；藉由比傳統人力銀行更具主動性的操作方式，能精準且有效率地找到適合的人才，同時也能接觸到跨國性人才，增加招募的可能性。      
                                 </h6>
                                 <div class="sm-text d-flex justify-content-start align-items-center pl-3">
                                     <img src="./素材檔案/p1.png" alt="">
@@ -522,7 +550,7 @@
                                 </div>
                             </li>
                             <li>
-                                <h6 class="txt-h">CakeResume 的清楚好用的搜尋工具以及使用者介面、容易閱讀的履歷樣板以及管理工具，讓我們能夠快速的從人才庫中尋找與公司理念與需求一致的人才。CakeResume 是新世代的人才媒合平台。    
+                                <h6 class="txt-h col-sm-12">CakeResume 的清楚好用的搜尋工具以及使用者介面、容易閱讀的履歷樣板以及管理工具，讓我們能夠快速的從人才庫中尋找與公司理念與需求一致的人才。CakeResume 是新世代的人才媒合平台。    
                                 </h6>
                                 <div class="sm-text d-flex justify-content-start align-items-center pl-3">
                                     <img src="./素材檔案/p2.png" alt="">
@@ -536,7 +564,7 @@
                         </ul>
                         <ul class="u-text d-flex list-unstyled ">
                             <li>
-                                <h6 class="txt-h">CakeResume 清楚明瞭的履歷除了可凸顯應徵者的優勢；也讓主管們更容易掌握應徵者的專長；閱讀履歷更有效率。在短時間內已有成功錄取案例，令人振奮！在 CakeResume 讓我們能接觸到其他不同平台的應徵者，拓展更多元的 sourcing channel。      
+                                <h6 class="txt-h col-sm-12">CakeResume 清楚明瞭的履歷除了可凸顯應徵者的優勢；也讓主管們更容易掌握應徵者的專長；閱讀履歷更有效率。在短時間內已有成功錄取案例，令人振奮！在 CakeResume 讓我們能接觸到其他不同平台的應徵者，拓展更多元的 sourcing channel。      
                                 </h6>
                                 <div class="sm-text d-flex justify-content-start align-items-center pl-3">
                                     <img src="./素材檔案/p3.png" alt="">
@@ -548,7 +576,7 @@
                                 </div>
                             </li>
                             <li>
-                                <h6 class="txt-h">CakeResume 的 UI 很整潔乾淨，功能也越來越齊全，也能從應徵者的履歷看出他們自己設計與構思，我們也在 CakeResume 上搜尋到一些不錯的人才並邀約面談，CakeResume 讓我們多了一個尋找合適優秀人才的管道，也期待繼續使用下去所帶來的效益！    
+                                <h6 class="txt-h col-sm-12">CakeResume 的 UI 很整潔乾淨，功能也越來越齊全，也能從應徵者的履歷看出他們自己設計與構思，我們也在 CakeResume 上搜尋到一些不錯的人才並邀約面談，CakeResume 讓我們多了一個尋找合適優秀人才的管道，也期待繼續使用下去所帶來的效益！    
                                 </h6>
                                 <div class="sm-text d-flex justify-content-start align-items-center pl-3">
                                     <img src="./素材檔案/p4.png" alt="">
@@ -569,7 +597,7 @@
                         <br>
                         <br>
                         <h2>找工作，工作找您</h2><br>
-                    <h6 class="sw">在 CakeResume，您除了可以自己搜尋職缺，雇主也會主動聯繫您</h6>
+                    <h6 class="sw p-1">在 CakeResume，您除了可以自己搜尋職缺，雇主也會主動聯繫您</h6>
                     <br>
                     <br>
                     <div class="button d-flex align-items-center justify-content-center">
@@ -579,8 +607,8 @@
                     </div>
                     <br>
                     <br>
-                    <div class="t1-left t2" >
-                        <video src="https://assets.cakeresume.com/assets/cakeresume_editor_demo-513b4d403199418c32b1cffcbffa0cf141c6838c54fc92f7f5c0b1eaafb6e2ab.mp4" alt="" id="vedio" autoplay="autoplay" loop="loop" muted="muted">
+                    <div class="t1-left t2 w-100" >
+                        <video src="https://assets.cakeresume.com/assets/cakeresume_editor_demo-513b4d403199418c32b1cffcbffa0cf141c6838c54fc92f7f5c0b1eaafb6e2ab.mp4" alt="" id="vedio" autoplay="autoplay" loop="loop" muted="muted" style="width: 90%;">
                     </div>
                     </div>
                 </div>
@@ -591,7 +619,7 @@
                         <br>
                         <br>
                         <h2>企業徵才</h2><br>
-                    <h6 class="sw">搜尋數十萬公開人才履歷，最高效、高品質的徵才招募工具</h6>
+                    <h6 class="sw p-1">搜尋數十萬公開人才履歷，最高效、高品質的徵才招募工具</h6>
                     <br>
                     <br>
                     <div class="button d-flex align-items-center justify-content-center">
@@ -601,8 +629,8 @@
                     </div>
                     <br>
                     <br>
-                    <div class="t1-left t2" >
-                        <video src="https://assets.cakeresume.com/assets/v4/talent_search-ec9eb200b4d57eddf2dd5e296c4bdc0a0b13d70737a51327afbaffe7e6ce8397.mp4" alt="" id="vedio" autoplay="autoplay" loop="loop" muted="muted">
+                    <div class="t1-left t2 mb-3" >
+                        <video src="https://assets.cakeresume.com/assets/v4/talent_search-ec9eb200b4d57eddf2dd5e296c4bdc0a0b13d70737a51327afbaffe7e6ce8397.mp4" alt="" id="vedio" autoplay="autoplay" loop="loop" muted="muted" style="width: 90%;">
                     </div>
                     </div>
                     <br>
@@ -631,7 +659,7 @@
                                 <i class="fas fa-chevron-down"></i>
                             </li>
                             <li class="qa">
-                                <h3>CakeResume 提供哪些履歷隱私設定？</h3>
+                                <h3>CakeResume提供哪些隱私設定？</h3>
                                 <i class="fas fa-chevron-down"></i>
                             </li>
                             <li class="qa">
@@ -648,7 +676,7 @@
     </div>
     <div class="footer w-100">
         <div class="container">
-            <div class="row d-flex justify-content-between pt-5">
+            <div class="row d-flex justify-content-between pt-5" id="ft-col">
                 <div class="f1 mr-5 ml-5">
                     <ul class="ft">
                         <li id="ft-title">找工作</li>
@@ -708,7 +736,7 @@
                         <li>Español</li>
                     </ul>
                 </div>
-                <div class="f1 w-25">
+                <div class="f1" id="foot-icon">
                     <ul class="ft">
                         <li id="ft-title">追蹤我們</li>
                         <li>在社群媒體上追蹤我們，以獲得最新履歷、<br>求職、和招募資訊！</li>
